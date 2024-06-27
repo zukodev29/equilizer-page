@@ -1,0 +1,381 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+html, body{
+    max-height: 100%;
+}  
+
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  3. Allow percentage-based heights in the application
+*/
+html, body {
+  height: 100%;
+}
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  6. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  7. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+/*
+  8. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+/*
+  9. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+
+body{
+  font-family: 'IBM Plex Sans', sans-serif;
+  background-image: url(./images/);
+  background-size: cover;
+  background-position: top -270px left 40px;
+}
+
+.logo__one{
+  padding: 2rem 0rem 0rem 1.5rem;
+}
+
+.eq__info{
+  padding: 4rem 1.5rem 11rem 1.5rem;
+}
+
+.eq__header{
+  font-size: 2.75rem;
+  font-weight: bold;
+  letter-spacing: -1px;
+  line-height: 1;
+  margin-bottom: 2rem;
+}
+
+.container__two{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  position: relative;
+  
+  
+}
+.illustration{
+  width: 220px;
+  height: 500px;
+}
+
+.illustrations__c{
+  position: relative;
+}
+
+.illustration__d{
+  position: absolute;
+  z-index: 2;
+  top: -120px;
+  left: 77px;
+  
+  
+}
+.background__nocolor{
+   padding-left: 2rem;
+}
+
+
+
+.background__pattern{
+  background-color: hsl(244, 23%, 12%);
+  position: relative;
+  z-index: 1;
+  border-radius: 0.5rem;
+  
+  
+  
+}
+
+.eq__main{
+  background-color: hsl(12, 94%, 65%);
+  position: absolute;
+  z-index: 3;
+  top: 420px;
+  padding: 2.5rem 2rem 1.5rem 2rem;
+  border-radius: 0.5rem;
+  
+}
+
+.main__title{
+  color: hsl(20, 33%, 98%);
+  padding-bottom: 0.5rem;
+}
+
+.main__desc{
+  color: hsl(20, 33%, 98%);
+  padding-bottom: 1rem;
+}
+
+.price{
+  color: hsl(20, 33%, 98%);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 1.5rem;
+}
+
+.price__a{
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.btn__one{
+  color: hsl(20, 33%, 98%);
+  background-color: hsl(244, 23%, 12%);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 0rem;
+  border-radius: 0.5rem;
+}
+
+.ios__txt{
+  padding-left: 0.5rem;
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+.buttons{
+  display: grid;
+  gap: 1rem;
+  padding-bottom: 2rem;
+  
+
+}
+
+.btn__two{
+  color: hsl(244, 23%, 12%);
+  background-color: hsl(20, 33%, 98%);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 0rem;
+  border-radius: 0.5rem;
+  
+}
+
+.android__txt{
+  padding-left: 0.5rem;
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+.logo__two{
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+}
+
+.information{
+  padding-left: 2rem;
+}
+
+.ex__bold{
+  font-weight: bold;
+}
+
+.social__media{
+  display: flex;
+  flex-direction: row;
+  padding: 3rem 2rem;
+}
+
+.instagram,
+.twitter{
+  margin-left: 1.125rem;
+}
+
+@media (min-width: 600px){
+    body{
+      background-image: url(./images/bg-main-tablet.png),
+      url(./images/bg-pattern-1.svg);
+      background-size: cover,
+      266px  410px; 
+      background-position: top -180px right 80px,
+      top -40px right -40px;
+      background-repeat: no-repeat,
+      no-repeat;
+    }
+    .logo__one{
+      padding-top: 6rem;
+    }
+    .eq__header{
+      padding-right: 20rem;
+      padding-top: 3rem;
+    }
+    .eq__desc{
+      padding-right: 14rem;
+    }
+    .background__pattern{
+      margin: 0rem 1.5rem 0rem 1.5rem;
+      padding: 2rem 0rem 3rem 0rem;
+    }
+
+    .background__nocolor{
+      position: relative;
+      left: 10rem;
+      top: -100px
+      
+      
+    }
+    .illustration__d{
+      position: absolute;
+      left: 120px;
+    }
+  .eq__main{
+    width: 50%;
+    position: absolute;
+    left: 250px;
+    top: 170px;
+  }
+  .dno{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+  }
+  .information{
+    padding-top: 1rem;
+  }
+  .container__three{
+    position: relative;
+    top: -400px
+  }
+}
+
+@media (min-width: 1280px){
+  body{
+    background-image: url(./images/bg-main-desktop.png),
+    url(./images/bg-pattern-1.svg);
+    background-size: cover,
+    312px 468px;
+    background-repeat: no-repeat,
+    no-repeat;
+    background-position: top -180px left -180px,
+    top -40px right 0px;
+  }
+  .container__one{
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+  .container__two{
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+  .container__three{
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+  .eq__header{
+    padding-right: 35rem;
+    padding-top: 5rem;
+  }
+  .eq__desc{
+    padding-right: 23rem;
+  }
+  .eq__main{
+    width: 446px;
+    height: 575px;
+    position: absolute;
+    left: 700px;
+    top: 90px;
+  }
+  .background__nocolor{
+    padding-left: 70px;
+  }
+
+  .illustration{
+    width: 220px;
+    height: 520px;
+}
+.main__title{
+  font-size: 2rem;
+  padding-bottom: 2.5rem;
+}
+.main__desc{
+  line-height: 1.5;
+  padding-right: 8rem;
+  font-size: 1.125rem;
+}
+.container__three{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo__img__two{
+  padding-top: 1rem;
+}
+.information{
+  padding-right: 230px;
+}
+}
+
+.btn__two:hover{
+  background-color: hsl(33, 100%, 70%);
+  cursor: pointer;
+}
+.btn__one:hover{
+  background-color: hsl(77, 68%, 64%);
+  cursor: pointer;
+}
+.facebook:hover{
+  background-color: hsl(12, 94%, 65%);
+  cursor: pointer;
+}
+.instagram:hover{
+  background-color: hsl(12, 94%, 65%);
+  cursor: pointer;
+}
+.twitter:hover{
+  background-color: hsl(12, 94%, 65%);
+  cursor: pointer;
+}
+
+    
+
+    
+    
+    
+
+
